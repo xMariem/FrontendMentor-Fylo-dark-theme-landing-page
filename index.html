@@ -673,10 +673,10 @@
       </div>
     </div>
     <script>
-      const form = document.querySelector("form"),
-        eInput = form.querySelector(' input[type="email"]'),
+      const eInput = document.querySelector(' input[type="email"]'),
         text = document.querySelector(".access .container .wrapper .text");
-      form.addEventListener("click", (e) => {
+      btn = document.querySelector("input[type="button"]")
+      btn.addEventListener("click", (e) => {
         let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //Regex pattern to validate email
 
         if (eInput.value == "") {
